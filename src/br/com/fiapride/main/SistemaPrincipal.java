@@ -12,6 +12,8 @@ public class SistemaPrincipal {
         Double n1 = scanner.nextDouble();
         System.out.print("Digite o total de comida: ");
         Double n2 = scanner.nextDouble();
+        System.out.println("Cachorro " + cachorro1.nome + " de raça " + cachorro1.raca + " e idade " + cachorro1.idade + " anos:");
+
         cachorro1.andar(n1);
 
         cachorro1.comer(n2);
