@@ -2,6 +2,7 @@
 
 ## Sobre o projeto
 Este projeto foi desenvolvido a fins educacionais sobre programação orientada a objetos em Java.
+O objeto referenciado é o cachorro, com os atributos nome, raça e idade; métodos para contar KMs andados e ração comida.
 
 ## Objetivo
 Desenvolver um Objeto com seus atributos e métodos (com regras de negócio incluídas).
