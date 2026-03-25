@@ -7,35 +7,30 @@ public class SistemaPrincipal {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Cachorro cachorro1 = new Cachorro("Billy", "Vira-lata", 2);
 
-        System.out.print("Digite o novo nome: ");
+        System.out.print("Nome: ");
         String nome = scanner.next();
 
-        System.out.print("Digite a nova raça: ");
+        System.out.print("Raça: ");
         String raca = scanner.next();
 
-        System.out.print("Digite a nova idade: ");
+        System.out.print("Idade: ");
         int idade = scanner.nextInt();
 
-        System.out.print("Digite kms total andados: ");
-        double kms = scanner.nextDouble();
+        Cachorro cachorro1 = new Cachorro(nome, raca, idade);
 
-        System.out.print("Digite o total de comida: ");
-        double comida = scanner.nextDouble();
-
-        cachorro1.setNome(nome);
-        cachorro1.setRaca(raca);
-        cachorro1.setIdade(idade);
-        cachorro1.setKms(kms);
-        cachorro1.setGr(comida);
-
-        System.out.println("\nCachorro atualizado:");
+        System.out.println("\nCachorro criado:");
         System.out.println("Nome: " + cachorro1.getNome());
         System.out.println("Raça: " + cachorro1.getRaca());
         System.out.println("Idade: " + cachorro1.getIdade());
-        System.out.println("KMs: " + cachorro1.getKms());
-        System.out.println("Comida: " + cachorro1.getGr());
+
+        System.out.print("\nQuantos kms ele andou? ");
+        double km = scanner.nextDouble();
+        cachorro1.andar(km);
+
+        System.out.print("Quantas gramas ele comeu? ");
+        double gr = scanner.nextDouble();
+        cachorro1.comer(gr);
 
         scanner.close();
     }
