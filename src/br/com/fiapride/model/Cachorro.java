@@ -4,11 +4,13 @@ public class Cachorro {
     private String nome;
     private String raca;
     private int idade;
+    private Tutor tutor;
 
-    public Cachorro(String nome, String raca, int idade){
+    public Cachorro(String nome, String raca, int idade, Tutor tutor){
         this.nome = nome;
         this.raca = raca;
         this.idade = idade;
+        this.tutor = tutor;
     }
 
     public void andar(double km){
@@ -30,6 +32,7 @@ public class Cachorro {
     public String getNome() { return nome; }
     public String getRaca() { return raca; }
     public int getIdade() { return idade; }
+    public Tutor getTutor() { return tutor; }
 
     public void setNome(String nome) { this.nome = nome; }
     public void setRaca(String raca) { this.raca = raca; }
